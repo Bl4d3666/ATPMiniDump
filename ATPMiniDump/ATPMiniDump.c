@@ -240,7 +240,7 @@ int wmain(int argc, wchar_t* argv[]) {
 	WCHAR chWinPath[MAX_PATH];
 	GetWindowsDirectory(chWinPath, MAX_PATH);
 	wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), chWinPath);
-	wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), L"\\Temp\\dumpert.dmp");
+	wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), L"\\Temp\\lol.txt");
 
 	UNICODE_STRING uFileName;
 	RtlInitUnicodeString(&uFileName, chDmpFile);
